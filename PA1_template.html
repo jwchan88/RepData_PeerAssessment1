@@ -69,16 +69,7 @@ img {
 <ol style="list-style-type: decimal">
 <li>Load the data (i.e. read.csv())</li>
 </ol>
-<pre class="r"><code>data &lt;- read.csv(unz(&quot;activity.zip&quot;, &quot;activity.csv&quot;), header = T)
-summary(data)</code></pre>
-<pre><code>##      steps                date          interval     
-##  Min.   :  0.00   2012-10-01:  288   Min.   :   0.0  
-##  1st Qu.:  0.00   2012-10-02:  288   1st Qu.: 588.8  
-##  Median :  0.00   2012-10-03:  288   Median :1177.5  
-##  Mean   : 37.38   2012-10-04:  288   Mean   :1177.5  
-##  3rd Qu.: 12.00   2012-10-05:  288   3rd Qu.:1766.2  
-##  Max.   :806.00   2012-10-06:  288   Max.   :2355.0  
-##  NA's   :2304     (Other)   :15840</code></pre>
+<pre class="r"><code>data &lt;- read.csv(unz(&quot;activity.zip&quot;, &quot;activity.csv&quot;), header = T)</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Process/transform the data (if necessary) into a format suitable for your analysis<br />NA.</li>
 </ol>
@@ -156,8 +147,8 @@ hist(newdailysteps$steps,
 newmediansteps &lt;- median(dailysteps$steps)</code></pre>
 <p>The mean number of steps taken per day is 1.076618910^{4}.<br />The median number of steps taken per day is 10765.</p>
 <ol start="6" style="list-style-type: decimal">
-<li><p>Do these values differ from the estimates from the first part of the assignment? No, The difference is minimal.</p></li>
-<li><p>What is the impact of imputing missing data on the estimates of the total daily number of steps? The frequency increased due to the larger number of observations.</p></li>
+<li><p>Do these values differ from the estimates from the first part of the assignment?<br />No, The difference is minimal.</p></li>
+<li><p>What is the impact of imputing missing data on the estimates of the total daily number of steps?<br />The frequency increased due to the larger number of observations.</p></li>
 </ol>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">

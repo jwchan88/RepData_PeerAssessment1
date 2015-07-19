@@ -10,7 +10,6 @@ output:
 1. Load the data (i.e. read.csv())
 ```{r}
 data <- read.csv(unz("activity.zip", "activity.csv"), header = T)
-summary(data)
 ```
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis  
@@ -98,10 +97,10 @@ newmediansteps <- median(dailysteps$steps)
 The mean number of steps taken per day is `r newmeansteps`.  
 The median number of steps taken per day is `r newmediansteps`.
 
-6. Do these values differ from the estimates from the first part of the assignment? 
+6. Do these values differ from the estimates from the first part of the assignment?  
 No, The difference is minimal.  
 
-7. What is the impact of imputing missing data on the estimates of the total daily number of steps?
+7. What is the impact of imputing missing data on the estimates of the total daily number of steps?  
 The frequency increased due to the larger number of observations.
 
 ## Are there differences in activity patterns between weekdays and weekends?
